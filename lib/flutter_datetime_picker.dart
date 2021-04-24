@@ -504,7 +504,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
                 style: theme.doneStyle,
               ),
               onPressed: () {
-                Navigator.pop(context, widget.pickerModel.finalTime());
+                // Navigator.pop(context, widget.pickerModel.finalTime());
                 if (widget.route.onConfirm != null) {
                   widget.route.onConfirm(widget.pickerModel.finalTime());
                 }
