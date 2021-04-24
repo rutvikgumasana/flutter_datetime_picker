@@ -48,4 +48,3 @@
 ## [1.3.8] - add Swedish language and fix issues
 ## [1.4.0] - support flutter 1.2.0
 ## [1.5.0] - so much update
-## [1.5.1] - null safety

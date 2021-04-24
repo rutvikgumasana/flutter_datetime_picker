@@ -32,8 +32,7 @@ enum LocaleType {
   sq,
   sv,
   kh,
-  tw,
-  fi
+  tw
 }
 
 final _i18nModel = <LocaleType, Map<String, Object>>{
@@ -75,7 +74,7 @@ final _i18nModel = <LocaleType, Map<String, Object>>{
   },
   LocaleType.en: {
     'cancel': 'Cancel',
-    'done': 'DEEEne',
+    'done': 'Done',
     'today': 'Today',
     'monthShort': [
       'Jan',
@@ -1304,48 +1303,12 @@ final _i18nModel = <LocaleType, Map<String, Object>>{
     'day': ['Mån', 'Tis', 'Ons', 'Tor', 'Fre', 'Lör', 'Sön'],
     'am': 'AM',
     'pm': 'PM'
-  },
-  LocaleType.fi: {
-    'cancel': 'Peruuta',
-    'done': 'Valmis',
-    'today': 'Tänään',
-    'monthShort': [
-      'Tammi',
-      'Helmi',
-      'Maalis',
-      'Huhti',
-      'Touko',
-      'Kesä',
-      'Heinä',
-      'Elo',
-      'Syys',
-      'Loka',
-      'Marras',
-      'Joulu'
-    ],
-    'monthLong': [
-      'Tammikuu',
-      'Helmikuu',
-      'Maaliskuu',
-      'Huhtikuu',
-      'Toukokuu',
-      'Kesäkuu',
-      'Heinäkuu',
-      'Elokuu',
-      'Syyskuu',
-      'Lokakuu',
-      'Marraskuu',
-      'Joulukuu'
-    ],
-    'day': ['Ma', 'Ti', 'Ke', 'To', 'Pe', 'La', 'Su'],
-    'am': 'AM',
-    'pm': 'PM'
   }
 };
 
 /// Get international object for [localeType]
-Map<String, Object> i18nObjInLocale(LocaleType? localeType) =>
-    _i18nModel[localeType] ?? _i18nModel[LocaleType.en] as Map<String, Object>;
+Map<String, Object> i18nObjInLocale(LocaleType localeType) =>
+    _i18nModel[localeType] ?? _i18nModel[LocaleType.en];
 
 /// Get international lookup for a [localeType], [key] and [index].
 String i18nObjInLocaleLookup(LocaleType localeType, String key, int index) {
