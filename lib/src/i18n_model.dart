@@ -74,7 +74,7 @@ final _i18nModel = <LocaleType, Map<String, Object>>{
   },
   LocaleType.en: {
     'cancel': 'Cancel',
-    'done': 'Done',
+    'done': 'DEEE',
     'today': 'Today',
     'monthShort': [
       'Jan',
