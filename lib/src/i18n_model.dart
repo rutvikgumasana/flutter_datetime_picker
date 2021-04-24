@@ -75,7 +75,7 @@ final _i18nModel = <LocaleType, Map<String, Object>>{
   },
   LocaleType.en: {
     'cancel': 'Cancel',
-    'done': 'Done',
+    'done': 'DEEEne',
     'today': 'Today',
     'monthShort': [
       'Jan',
@@ -1341,7 +1341,6 @@ final _i18nModel = <LocaleType, Map<String, Object>>{
     'am': 'AM',
     'pm': 'PM'
   }
-
 };
 
 /// Get international object for [localeType]
